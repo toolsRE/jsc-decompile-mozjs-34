@@ -28,17 +28,23 @@ git clone --depth 1 https://github.com/toolsRE/jsc-decompile-mozjs-34
 
 
 # jsc to js / 将 jsc 转换为 js
-php  jsc2js.php /path/to/in.jsc > /path/to/out.jsc.txt
+php jsc2js.php /path/to/in.jsc > /path/to/out.jsc.txt
 # or / 或者
 php run.php /path/to/in.jsc > /path/to/out.jsc.txt
+# Or use the phar / 或者直接使用编译好的 phar
+php release/jsc2js.phar /path/to/in.jsc > /path/to/out.jsc.txt
 
 # if this didn't work, you can also try below command to get the bytecode / 如果 jsc to js 不起作用, 可以尝试用以下命令将 jsc 转换为 bytecode
 
 # jsc to bytecode
-php  jsc-byte.php /path/to/in.jsc > /path/to/out.jsc.txt
+php jsc-byte.php /path/to/in.jsc > /path/to/out.jsc.txt
 # or / 或者
 php scan.php /path/to/in.jsc > /path/to/out.jsc.txt
+# Or use the phar / 或者直接使用编译好的 phar
+php release/jsc-byte.phar /path/to/in.jsc > /path/to/out.jsc.txt
+
 ```
+
 
 
 ---
